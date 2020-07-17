@@ -1,0 +1,178 @@
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.article-slide{
+  position: relative;
+  margin: 100px 50px;
+  height: 450px;
+  background-color: #edf2f8;
+  box-shadow: 1px 2px 22px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article{
+  position: absolute;
+  top: 23%;
+  left: 27%;
+}
+
+h3{
+  font-size: 1.05rem;
+  letter-spacing: 0.6px;
+}
+
+.article-image{
+  float:left;
+  margin-right: 38px;
+  border-radius: 10px 0 0 10px;
+  width: 238px;
+  height:236px;
+  object-fit: cover;
+  object-position: 5% 50%;
+}
+
+.article-content{
+  width:583px;
+  height: 226px;
+  padding: 5px 26px;
+  background-color: #fff;
+  box-shadow: 1px 2px 22px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.description{
+  color: #adb1ba;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.avatar{
+  display: inline-block;
+  margin-top:-7px;
+  font-size: 0.7em;
+  line-height: 0.5;
+}
+
+.avatar-image{
+  border-radius: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+.date{
+  color: #adb1ba;
+}
+
+.share-icon{
+  float:right;
+  fill: #6E8098;
+  background-color: #e6edf7;
+  padding: 6px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+ .share-icon:hover, .clicked {
+  fill: white;
+  background-color: #6c8099;
+}
+
+.share{
+  visibility: hidden;
+  position: absolute;
+  top: 122px;
+  right:-83px;
+  display: inline-block;
+  width: 180px;
+  background-color: #49556b;
+  color:#fff;
+  padding: 10px 0px 10px 30px;
+  border-radius: 10px;
+}
+
+.show{
+  visibility: visible;
+}
+
+.share::after{
+  content: " ";
+  position: absolute;
+  left: 83px;
+  bottom:-10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #49556b transparent transparent transparent;
+
+}
+
+.share-text{
+  display: inline-block;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.social{
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+@media (max-width:1200px) {
+  .article-slide{
+    margin: 0;
+    height: auto;
+  }
+
+  .article{
+    position: static;
+    padding:20% 10%;
+
+  }
+
+  .article-image{
+    display: inline-block;
+    position: relative;
+    float:none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin:0;
+  }
+
+  .article-content{
+    position: relative;
+    width:auto;
+    height: auto;
+    padding: 14px 26px;
+    border-radius: 0 0 10px 10px;
+    margin-top:-42px;
+  }
+
+  .share{
+    position: relative;
+    right:0;
+    top:unset;
+    bottom:59px;
+    width: auto;
+    display:block;
+    padding: 19px 0 10px 30px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .share::after{
+    position: static;
+  }
+
+  .share-icon{
+    margin-top: 6px;
+  }
+
+}
